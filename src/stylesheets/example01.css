@@ -1,1 +1,9 @@
 /* TODO: Example 01 (Activity 2) CSS goes here */
+body {
+    background-color: lightblue;
+  }
+  
+h1 {
+color: white;
+text-align: center;
+}
