@@ -1,9 +1,130 @@
-/* TODO: Example 01 (Activity 2) CSS goes here */
+html {
+  box-sizing: border-box;
+  font-family: arial, helvetica, sans-serif;
+  font-size: 16px;
+}
+
+*,
+::before,
+::after {
+  box-sizing: inherit;
+}
+
 body {
-    background-color: lightblue;
+  margin: 0;
+  padding: 0;
+  background-color: pink;
+}
+
+header {
+  font-size: 1.5rem;
+  padding: 0 1rem;
+  background-color: lightblue;
+  color: white;
+  height: 200px;
+  text-align: center;
+}
+
+header > h1 {
+  margin-left: 2rem;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
+
+#search {
+  display: none;
+  margin: 2rem 1.5rem 0 0;
+}
+
+nav {
+  text-align: center;
+}
+
+nav > ul {
+  list-style: none;
+}
+
+nav > ul > li {
+  display: inline;
+  color: white;
+  margin-bottom: beige;
+  margin-left: 1rem;
+}
+
+main {
+  margin-top: 1rem;
+  width: 95%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.blogImg {
+  width: 100%;
+}
+
+.blogPost {
+  border-bottom: 2px solid;
+}
+
+.btn {
+  background-color: lightblue;
+  padding: 0.75rem 1.5rem;
+  border-radius: 5rem;
+}
+
+.readMore {
+  display: none;
+}
+
+footer {
+  background-color: lightblue;
+  padding: 1rem;
+  margin-top: 1rem;
+  text-align: center;
+}
+
+/* Floating Elements */
+.pull-left {
+  float: left;
+}
+
+.pull-right {
+  float: right;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* media queries */
+
+@media all and (min-width: 600px) {
+  #search {
+    display: inline;
+    width: 30%;
+    border-radius: 5rem;
+    height: 2.5rem;
+    background-color: rgb(255, 255, 255);
+    border: none;
+    float: right;
   }
-  
-h1 {
-color: white;
-text-align: center;
+
+  header {
+    text-align: start;
+  }
+
+  .blogImg {
+    width: 30%;
+    float: left;
+    margin: 0.75rem;
+  }
+
+  .blogText {
+    margin: 1rem;
+  }
+
+  .readMore {
+    display: inline;
+  }
 }

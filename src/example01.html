@@ -1,16 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./stylesheets/example01.css">
-  <title>Example 01</title>
-</head>
-<body>
-  <header>
-    <h1> Matisse Mosher</h1>
-  </header>
-  <p>Activity 2 coming soon</p>
-  <script type="module" src="./javascripts/main.js"></script>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./stylesheets/example01.css" />
+    <title>Bryce Canyon</title>
+  </head>
+  <body>
+    <header class="clearfix">
+      <h1 class="pull-left">National Parks</h1>
+      <label for="search"></label>
+      <input type="search" id="search" placeholder="Search Here" />
+    </header>
+
+    <nav>
+      <ul id="navMenu">
+        <li>Menu 1</li>
+        <li>Menu 2</li>
+        <li>Menu 3</li>
+        <li>Menu 4</li>
+      </ul>
+    </nav>
+
+    <main>
+      <article class="blogPost clearfix">
+        <img src="images/BRYCE.jpg" class="blogImg" />
+        <div class="blogText">
+          <h2 class="artTitle">Bryce Canyon</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit eum harum necessitatibus, nam aut eos quasi,
+            consequatur deleniti eligendi sit blanditiis maiores quas fugiat aspernatur natus? Explicabo consequatur
+            vero nobis.
+          </p>
+          <p>
+            Nulla necessitatibus delectus alias suscipit ad nisi, hic quas voluptatibus asperiores commodi nobis
+            voluptas nemo repellat odio distinctio dolorum tempore. Veniam voluptas sunt dolorum aspernatur sint,
+            impedit reprehenderit. Sint, fugit.
+          </p>
+          <p>
+            Perspiciatis obcaecati harum vitae sapiente fugit minima voluptatem qui earum voluptates debitis reiciendis
+            tenetur dicta, illo libero totam reprehenderit maxime incidunt in molestiae! Veritatis molestiae
+            exercitationem voluptates laudantium, dolorum aut.
+          </p>
+
+          <a href="" class="btn readMore">Read More</a>
+        </div>
+      </article>
+    </main>
+    <footer>&copy; All Rights Reserved</footer>
+
+    <p>
+      Photo by
+      <a href="https://unsplash.com/@tracyzhang?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
+        >Tracy Zhang</a
+      >
+      on
+      <a
+        href="https://unsplash.com/photos/aerial-photo-of-brown-canyon-JONHzkMZNZQ?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
+        >Unsplash</a
+      >
+    </p>
+
+    <script type="module" src="./javascripts/main.js"></script>
+  </body>
 </html>
