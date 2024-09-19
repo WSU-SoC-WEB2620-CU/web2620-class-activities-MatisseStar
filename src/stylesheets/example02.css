@@ -40,19 +40,6 @@ nav a:hover {
   color: #b84650;
 }
 
-img {
-  max-width: 500px;
-  width: 50%;
-  border: 1px solid #ffb866;
-  border-radius: 10px;
-  margin: 0.75rem;
-}
-
-main {
-  margin: 0 auto;
-  width: 80%;
-}
-
 /* Floats */
 .pull-left {
   float: left;
@@ -70,6 +57,19 @@ main {
 
 .clearfix3 {
   display: flow-root;
+}
+
+img {
+  max-width: 500px;
+  width: 50%;
+  border: 1px solid #ffb866;
+  border-radius: 10px;
+  margin: 0.75rem;
+}
+
+main {
+  margin: 0 auto;
+  width: 80%;
 }
 
 /*Styling Text Vertically*/
