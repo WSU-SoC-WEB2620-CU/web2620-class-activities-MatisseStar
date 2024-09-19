@@ -45,7 +45,12 @@ img {
   width: 50%;
   border: 1px solid #ffb866;
   border-radius: 10px;
-  margin: 0.75em;
+  margin: 0.75rem;
+}
+
+main {
+  margin: 0 auto;
+  width: 80%;
 }
 
 /* Floats */
@@ -97,9 +102,23 @@ img {
   float: none;
 }
 
-.vcenter4 .left-col {
+.vcenter4 {
+  line-height: 200px;
+  margin: 0 calc((100% - 800px) / 8);
+}
+
+/*Equal-Height Columns*/
+
+.column {
+  float: left;
+  padding: 10px;
+  color: black;
+}
+
+.left-col,
+.right-col {
   background-color: #b84650;
-  color: #603d65;
+  color: white;
   width: 25%;
   padding: 10px;
 }
@@ -110,7 +129,14 @@ img {
   padding: 10px;
 }
 
-.equal-height {
+/*.right-col {
+  background-color: yellow;
+  color: white;
+  width: 25%;
+  padding: 10px;
+} */
+
+.equal-height1 {
   display: table;
 }
 
