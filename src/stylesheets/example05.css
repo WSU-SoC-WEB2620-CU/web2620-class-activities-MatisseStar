@@ -1,1 +1,99 @@
-/* TODO: Example 05 (Activity 6) CSS goes here */
+html {
+  box-sizing: border-box;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 16px;
+  background-color: pink;
+}
+
+* {
+  box-sizing: inherit;
+}
+nav > ul > li > a {
+  text-decoration: none;
+  color: black;
+  padding: 0.5rem;
+}
+
+.featured,
+.card,
+.aside {
+  background-color: black;
+  color: white;
+  padding: 1rem;
+  border-radius: 1rem;
+}
+
+.button {
+  background-color: yellow;
+  padding: 0.8rem;
+  border: none;
+  font-size: 1.2rem;
+}
+
+/* Grid Items*/
+body {
+  background-color: pink;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+
+header {
+  background: none;
+  font-size: 13rem;
+  grid-column: 1 / 2;
+  align-self: center;
+}
+
+nav {
+  background: none;
+  grid-column: 2 / span 2;
+}
+
+.featured {
+  grid-row: 2 / 4;
+  grid-column: 1 / 2 span;
+}
+
+footer {
+  grid-column: 1 / span 3;
+  justify-self: center;
+}
+
+/* Flex Items*/
+
+nav > ul {
+  display: flex;
+  padding: 10px;
+  list-style: none;
+}
+
+nav > ul > li {
+  background-color: aliceblue;
+  margin-left: 1rem;
+  border-radius: 1rem;
+}
+
+nav > ul > li:first-child {
+  margin-left: 0;
+}
+
+nav > ul > li:last-child {
+  margin-left: auto;
+}
+
+#login {
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+#pricing {
+  font-size: 1.5rem;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+}
+
+#pricing > button {
+  align-self: stretch;
+}
