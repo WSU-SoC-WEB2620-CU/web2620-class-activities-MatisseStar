@@ -1,0 +1,45 @@
+@mixin make-button($color) {
+  margin: 0.5em;
+  padding: 0.5em 1em;
+  font-size: 1.2rem;
+  display: inline-block;
+  background: $color;
+  color: white;
+  border: 1px solid darken($color, 15%);
+  border-radius: 6px;
+  transition: background-color 0.35s ease-in-out;
+  width: 100%;
+
+  &:hover {
+    background: lighten($color, 10%);
+  }
+}
+
+.button {
+  @include make-button($color);
+  @media (min-width: 600px) {
+    width: calc(50% - 2em);
+  }
+  @media (min-width: 740px) {
+    width: auto;
+  }
+  &.basic {
+    @include make-button($color);
+  }
+
+  &.primary {
+    @include make-button($primary);
+  }
+  &.secondary {
+    @include make-button($secondary);
+  }
+  &.success {
+    @include make-button($success);
+  }
+  &.error {
+    @include make-button($error);
+  }
+  &.warning {
+    @include make-button($warning);
+  }
+}

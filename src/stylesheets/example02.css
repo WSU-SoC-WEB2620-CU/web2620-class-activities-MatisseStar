@@ -11,6 +11,12 @@ html {
   box-sizing: inherit;
 }
 
+article > h1::before {
+  counter-increment: article;
+  content: "Article " counter(article) ": ";
+  color: #ffb866;
+}
+
 nav {
   border-bottom: 1px solid #603d65;
   padding: 0.5rem;
@@ -70,6 +76,7 @@ img {
 main {
   margin: 0 auto;
   width: 80%;
+  counter-reset: article;
 }
 
 /*Styling Text Vertically*/

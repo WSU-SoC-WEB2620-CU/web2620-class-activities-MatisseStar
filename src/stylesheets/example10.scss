@@ -1,0 +1,31 @@
+//before
+$grid-breakpoints: (
+  sm: 0,
+  md: 900px,
+  lg: 1200px,
+);
+
+$light-color: #a0c4f2;
+$dark-color: #31403a;
+@use "sass:color";
+
+//import
+@import "bootstrap/scss/bootstrap";
+
+@mixin make-box($type) {
+  @if $type == "light" {
+    background: color.adjust($light-color, $lightness: 10%);
+    border: 2px solid;
+  } @else {
+    background: color.adjust($dark-color, $lightness: 30%);
+  }
+}
+
+//after import
+.l-box {
+  @include make-box("light");
+}
+
+.d-box {
+  @include make-box("dark");
+}

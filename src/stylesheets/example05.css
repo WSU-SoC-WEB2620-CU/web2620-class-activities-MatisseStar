@@ -2,7 +2,7 @@ html {
   box-sizing: border-box;
   font-family: "Courier New", Courier, monospace;
   font-size: 16px;
-  background-color: pink;
+  background-color: #00f4cc;
 }
 
 * {
@@ -17,14 +17,14 @@ nav > ul > li > a {
 .featured,
 .card,
 .aside {
-  background-color: black;
+  background-color: #3a356e;
   color: white;
   padding: 1rem;
   border-radius: 1rem;
 }
 
 .button {
-  background-color: yellow;
+  background-color: #f5f549;
   padding: 0.8rem;
   border: none;
   font-size: 1.2rem;
@@ -32,7 +32,6 @@ nav > ul > li > a {
 
 /* Grid Items*/
 body {
-  background-color: pink;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 1rem;

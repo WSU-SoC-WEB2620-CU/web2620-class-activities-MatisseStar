@@ -1,0 +1,109 @@
+html {
+  box-sizing: border-box;
+}
+
+* {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+.flexCont {
+  display: flex;
+  justify-content: space-around;
+}
+
+.flexBox {
+  background-color: pink;
+  width: 5rem;
+  height: 15rem;
+  text-align: center;
+  line-height: 15rem;
+}
+
+.flexBox:nth-child(2) {
+  /*transform: skewX(5deg) rotate(10deg) translateY(50px) scale(0.9); */
+  animation: height-change 3s linear;
+}
+
+@keyframes height-change {
+  from {
+    height: 0px;
+  }
+  to {
+    height: 500px;
+  }
+}
+
+.flexBox:nth-child(4) {
+  transform: rotate(180deg);
+  font-size: 2rem;
+  animation: box4animate 4s ease;
+}
+
+@keyframes box4animate {
+  0% {
+    height: 0px;
+    width: 120px;
+    background-color: rgb(54, 204, 121);
+  }
+
+  50% {
+    background-color: rgb(255, 189, 127);
+  }
+  100% {
+    height: 600%;
+    width: 120px;
+    background-color: rgb(102, 88, 114);
+  }
+}
+
+.animate:hover {
+  transform: rotate(90deg);
+  transition: transform 3s ease, background-color 3s ease-out;
+  background-color: rgb(204, 65, 86);
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  background-color: rgb(185, 92, 181);
+}
+
+.landing {
+  width: 100%;
+  height: 100%;
+  background: url(../images/Skeleton.jpg) no-repeat;
+  background-size: cover;
+  background-position: center top;
+  animation: landing-Animate 4s forwards;
+}
+
+@keyframes landing-Animate {
+  0%,
+  100% {
+    clip-path: polygon(50% 0%, 64% 26%, 98% 35%, 74% 58%, 79% 91%, 50% 70%, 21% 91%, 26% 57%, 2% 35%, 33% 26%);
+  }
+}
+
+.background {
+  height: 100%;
+  width: 100%;
+  background-color: rgb(47, 151, 99);
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  transform-origin: top;
+  animation: bg-Animate 4s forwards;
+}
+
+@keyframes bg-Animate {
+  0%,
+  50% {
+    transform: scaleY(1);
+  }
+  100% {
+    transform: scaleY(0);
+  }
+}

@@ -1,1 +1,35 @@
-/* TODO: Example 09 (Activity 10) CSS goes here */
+/* before import */
+$primary: #5a66ac;
+$secondary: #a0c4f2;
+$bg: #a0c4f2;
+$b: black;
+$c: white;
+
+// required imports
+@import "bootstrap/scss/functions";
+@import "bootstrap/scss/variables";
+@import "bootstrap/scss/variables-dark";
+@import "bootstrap/scss/maps";
+@import "bootstrap/scss/mixins";
+@import "bootstrap/scss/root";
+@import "bootstrap/scss/reboot";
+@import "bootstrap/scss/utilities";
+
+//optional imports
+
+@import "bootstrap/scss/containers";
+@import "bootstrap/scss/alert";
+@import "bootstrap/scss/buttons";
+@import "bootstrap/scss/type";
+
+//after import
+
+@each $color, $value in $theme-colors {
+  .alert-#{color} {
+    box-shadow: 3px 3px #a0c4f2;
+  }
+}
+
+.message {
+  @extend .alert;
+}
